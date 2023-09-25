@@ -1,1 +1,1 @@
-# Django blood bank management system
+# Blood Donation Management System- Django Web Application.
