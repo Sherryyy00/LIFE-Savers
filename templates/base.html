@@ -1,0 +1,13 @@
+{% load i18n %}<!doctype html>
+{% get_current_language as LANG %}{% get_current_language_bidi as RTL %}
+<html lang="{{ LANG }}" dir="{% if RTL %}rtl{% else %}ltr{% endif %}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ SITE_NAME }}{% endblock %}</title>
+  {# Phase 2: Tailwind build + HTMX go here #}
+</head>
+<body>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>

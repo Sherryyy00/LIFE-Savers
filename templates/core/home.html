@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block content %}
+  <h1>{{ SITE_NAME }}</h1>
+  <p><strong>{% translate SITE_TAGLINE %}</strong></p>
+  <p>{% translate "Connecting blood donors with patients in Wah Cantt and Taxila." %}</p>
+  <p>{% blocktranslate count n=donor_count %}{{ n }} registered donor{% plural %}{{ n }} registered donors{% endblocktranslate %}
+     · {% blocktranslate count n=open_requests %}{{ n }} open request{% plural %}{{ n }} open requests{% endblocktranslate %}</p>
+  <p><em>Phase 1 placeholder. The real interface arrives in Phase 2.</em></p>
+{% endblock %}
